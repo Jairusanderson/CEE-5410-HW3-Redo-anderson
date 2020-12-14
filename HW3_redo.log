@@ -1,0 +1,109 @@
+--- Job HW3_redo.gms Start 12/13/20 18:23:48 33.1.0 rb238721 WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    C:\GAMS\33\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "C:\Users\geotech\Desktop\Water Resource\HW3-redo\HW3_redo.gms"
+    PageSize 0
+    ScrDir "C:\Users\geotech\Desktop\Water Resource\HW3-redo\225a\"
+    SysDir C:\GAMS\33\
+    LogOption 3
+    ErrMsg 1
+    ErrorLog 99
+    IDE 1
+    LstTitleLeftAligned 1
+Licensee: Small MUD - 5 User License                     G200622/0001AP-GEN
+          Utah State University, Utah Water Research Laboratory      DC7087
+          C:\Users\geotech\Documents\GAMS\gamslice.txt
+GAMS 33.1.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
+--- Starting compilation
+--- HW3_redo.gms(76) 3 Mb
+--- Starting execution: elapsed 0:00:00.009
+--- HW3_redo.gms(54) 4 Mb
+--- Generating LP model PLANT_PRIMAL
+--- HW3_redo.gms(62) 4 Mb
+---   5 rows  3 columns  10 non-zeroes
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.015
+
+IBM ILOG CPLEX   33.1.0 rb238721 Released Nov 01, 2020 WEI x86 64bit/MS Window
+
+--- GAMS/Cplex licensed for continuous and discrete problems.
+
+*** Error Cannot open parameter file "C:\Users\geotech\Desktop\Water Resource\HW3-redo\cplex.opt"
+*** Error Error code = 2; No such file or directory
+
+--- GMO memory 0.50 Mb (peak 0.50 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 12.10.0.0 link memory 0.00 Mb (peak 0.00 Mb)
+--- Starting Cplex
+
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Simplex_Display                         2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 1 rows and 1 columns.
+Reduced LP has 3 rows, 2 columns, and 6 nonzeros.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration      Dual Objective            In Variable           Out Variable
+     1  I            0.000000               X(Grain)RES_CONS_PRIMAL(J slack
+     2         1213333.333333                 X(Hay)RES_CONS_PRIMAL(J slack
+     3         1160000.000000RES_CONS_PRIMAL(J slackRES_CONS_PRIMAL(l slack
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.00sec (det. 0.01 ticks)
+
+
+Optimal solution found
+Objective:      1160000.000000
+
+--- Reading solution for model PLANT_PRIMAL
+--- Executing after solve: elapsed 0:00:00.073
+--- Generating LP model PLANT_DUAL
+--- HW3_redo.gms(66) 4 Mb
+---   3 rows  5 columns  12 non-zeroes
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:00.075
+
+IBM ILOG CPLEX   33.1.0 rb238721 Released Nov 01, 2020 WEI x86 64bit/MS Window
+
+--- GAMS/Cplex licensed for continuous and discrete problems.
+--- GMO memory 0.50 Mb (peak 0.50 Mb)
+--- Dictionary memory 0.00 Mb
+--- Cplex 12.10.0.0 link memory 0.00 Mb (peak 0.00 Mb)
+--- Starting Cplex
+
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Advance                                 0
+CPXPARAM_Simplex_Display                         2
+CPXPARAM_Threads                                 1
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0
+Tried aggregator 1 time.
+LP Presolve eliminated 0 rows and 1 columns.
+Reduced LP has 2 rows, 4 columns, and 7 nonzeros.
+Presolve time = 0.00 sec. (0.00 ticks)
+
+Iteration      Dual Objective            In Variable           Out Variable
+     1         1080000.000000                Y(July)RES_CONS_DUAL(Gra slack
+     2         1160000.000000                Y(land)RES_CONS_DUAL(Hay slack
+
+--- LP status (1): optimal.
+--- Cplex Time: 0.00sec (det. 0.00 ticks)
+
+
+Optimal solution found
+Objective:      1160000.000000
+
+--- Reading solution for model PLANT_DUAL
+--- Executing after solve: elapsed 0:00:00.132
+--- HW3_redo.gms(72) 4 Mb
+--- GDX File (execute_unload) C:\Users\geotech\Desktop\Water Resource\HW3-redo\Hay_Grain_Dual.gdx
+--- HW3_redo.gms(74) 4 Mb
+GDX2XLS          33.1.0 rb238721 Released Nov 01, 2020 WEI x86 64bit/MS Window
+Output file: C:\Users\geotech\Desktop\Water Reso
+Output file: C:\Users\geotech\Desktop\Water Resource\HW3-redo\Hay_Grain_Dual.xlsx
+(Created backup file)
+*** Status: Normal completion
+--- Job HW3_redo.gms Stop 12/13/20 18:23:50 elapsed 0:00:02.721
